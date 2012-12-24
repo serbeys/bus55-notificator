@@ -1,0 +1,163 @@
+#mainForm > div {
+    padding-bottom: 15px;;
+}
+
+.selected{
+    color: blue;
+    opacity: 1;
+
+}
+
+.item{
+    color: #AAAAAA;
+    opacity: 0.5;
+}
+
+#allTransportType,
+#customTransportType,
+#customTransportType li {
+
+}
+
+.deleteButton{
+    width: 12px;
+    height: 12px;
+    background-image: url("/img/deleteButton.png");
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.plannedItem{
+    list-style-type:none;
+}
+
+body {
+    font: 80% "Trebuchet MS", sans-serif;
+    margin: 50px;
+}
+
+.demoHeaders {
+    margin-top: 2em;
+}
+
+#dialog_link {
+    padding: .4em 1em .4em 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+#dialog_link span.ui-icon {
+    margin: 0 5px 0 0;
+    position: absolute;
+    left: .2em;
+    top: 50%;
+    margin-top: -8px;
+}
+
+ul#icons {
+    margin: 0;
+    padding: 0;
+}
+
+ul#icons li {
+    margin: 2px;
+    position: relative;
+    padding: 4px 0;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+}
+
+ul#icons span.ui-icon {
+    float: left;
+    margin: 0 4px;
+}
+
+#feedback {
+    font-size: 1.4em;
+}
+
+#searchLinks .ui-selecting {
+    background: #FECA40;
+}
+
+#searchLinks .ui-selected {
+    background: #F39814;
+    color: white;
+}
+
+#searchLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+#searchLinks li {
+    margin: 3px;
+    padding: 0.4em;
+    height: 18px;
+}
+
+#searchDirectionList .ui-selecting {
+    background: #FECA40;
+}
+
+#searchDirectionList .ui-selected {
+    background: #f3b390;
+    color: white;
+}
+
+#searchDirectionList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+#searchDirectionList li {
+    margin: 3px;
+    padding: 0.4em;
+    height: 18px;
+}
+
+table.tableizer-table {
+    border: 1px solid #CCC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+.tableizer-table td {
+    padding: 4px;
+    margin: 1px;
+    /*border: 1px solid #ccc;*/
+}
+
+.tableizer-table th {
+    background-color: #F39814;
+    color: #FFF;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+#toolBar{
+    display:block;
+
+    /*set the div in the top right corner*/
+    position:absolute;
+    top:0;
+    right:0;
+    width:200px;
+    padding-left: 5px;
+
+    /*give it some background and border*/
+    background:#eee;
+    border:1px solid #ddd;
+}
+
+#saveSettingsButton{
+    margin-left: 80px;
+}

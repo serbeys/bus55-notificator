@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Настройки уведомлений о прибытии транспорта</title>
+    <!--<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet"/>-->
+    <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet"/>
+    <link type="text/css" href="css/option.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/libs/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery-ui-1.8.23.custom.min.js"></script>
+    <script type="text/javascript" src="js/libs/notificationItem.js"></script>
+    <script type="text/javascript" src="js/libs/options.js"></script>
+
+
+</head>
+<body id="themeroller">
+<!--<div id="toolBar">-->
+    <!--<a id="openSettings"  href="#openSettings">Настройки</a>-->
+    <!--<a id="openHelp"  href="#openHelp">Как пользоваться?</a>-->
+
+    <!--<div id="settings" style="display: none;">-->
+        <!--Настройки настройки-->
+        <!--<button id="saveSettingsButton" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">-->
+            <!--<span class="ui-button-text">Сохранить</span>-->
+        <!--</button>-->
+    <!--</div>-->
+<!--</div>-->
+<div id="logo"><img src="img/BNlogo.png"></div>
+<h3>Настройки уведомлений:</h3>
+
+<div id="savedNotifications">
+</div>
+<div id="noNotificationMessage">Нет уведомлений
+    <br/>
+</div>
+<a id="addNotification" href="#addNotification">Добавить уведомление</a>
+<hr>
+<div id="mainForm" style="display: none;">
+    <div id="searchStation">
+        Найдите нужную остановку:<br>
+        <input id="searchEditBox" type="text" name="search" value=""/>
+
+        <button type="button" id="searchButton"
+                class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+            <span class="ui-button-text">Поиск</span>
+        </button>
+    </div>
+    <div id="searchResult" style="display: none;">
+        Выберете нужную остановку:<br>
+        <ul id="searchLinks">
+
+        </ul>
+
+    </div>
+    <div id="searchError" class="ui-widget" style="display: none;">
+        <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+            <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+                <strong>Ошибка:</strong> По вашему запросу ничего не найдено!</p>
+        </div>
+    </div>
+    <div id="searchDirection" style="display: none ;">
+        Выберете нужное направление:<br>
+        <ul id="searchDirectionList">
+        </ul>
+    </div>
+    <div id="directionsAndRoutes" style="display: none;">
+        Определите маршруты:<br>
+        <ul id="routes">
+
+        </ul>
+        <div id="typeOfTransport">
+            Определите вид транспорта:<br>
+            <input id="allTransportType" type="checkbox" value="all" checked="true"><label
+                for="allTransportType">Все</label>
+
+            <div id="customTransportType" style="display: none;">
+                <input type="checkbox" id="bs" value="bs"><label for="bs">Автобус</label>
+                <input type="checkbox" id="tbs" value="tbs"><label for="tbs">Троллейбус</label>
+                <input type="checkbox" id="trn" value="trn"><label for="trn">Трамвай</label>
+            </div>
+        </div>
+    </div>
+    <div id="timeSettings" style="display: none;">
+        Настройте время уведомлений:<br>
+
+        <p><label for="amount"> Время уведомлений: </label> <input type="text" id="amount"
+                                                                   style="border:0; color:#f6931f; font-weight:bold;"/>
+        </p>
+
+        <div id="slider-range" style="width:200"></div>
+        <div style="padding-top: 15px;"> Предупреждать о прибытии за <input id="timeToCome" type="text" value="15">минут
+        </div>
+    </div>
+    <button id="submitButton" style="display: none;">
+        Подтвердите настройку уведомлений
+    </button>
+
+</div>
+</body>
+</html>

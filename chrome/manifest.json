@@ -1,0 +1,26 @@
+{
+    "name":"Мой маршрут",
+    "version":"1.0",
+    "manifest_version":2,
+    "description":"Оповещение ",
+    "browser_action": {
+        "default_icon": "img/bus_48.png",
+        "default_popup": "popup.html"
+    },
+    "icons": { "48": "img/bus_48.png" },
+
+    "permissions": [
+        "notifications",
+        "http://m.bus55.ru/index.php/app/*"
+    ],
+
+    "background": {
+        "scripts": ["js/libs/jquery-1.7.1.js","js/libs/notificationItem.js","js/libs/prediction.js","js/script.js"]
+    },
+    "options_page": "options.html",
+    "web_accessible_resources": [
+        "img/bus_32.gif",
+        "img/deleteButton.png"
+    ]
+
+}
